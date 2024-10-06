@@ -1,0 +1,78 @@
+
+
+
+.testimonials {
+    padding: 2em;
+    text-align: center; 
+    margin: 1em auto; 
+}
+
+
+.container-testimonials {
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 79%;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start; 
+    margin: auto;
+}
+.testimonial {
+    flex: 0 0 auto; 
+    width: 20em;
+    height: 30em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow_dark); 
+    padding: 1em; 
+    margin: 0.5em;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    border: #e0e0e0 solid 0.1em;
+}
+
+.testimonial:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+.testimonial-img {
+    width: 10em; 
+    height: 10em; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid var(--acent_color); 
+    margin-bottom: 1em; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.testimonials h3 {
+    font-size: 1.5rem; 
+    color: var(--acent_color); 
+}
+
+.testimonial h4 {
+    font-size: 1rem;
+    color: #888888;
+ 
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 0.5em; 
+    font-style: italic; 
+}
+.container-testimonials::-webkit-scrollbar {
+    width: 0; 
+    transition: width 0.3s ease;
+}
+
+.show-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--acent_color);
+    border-radius: 10px;
+}

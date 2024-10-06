@@ -1,0 +1,73 @@
+
+.navbar {
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    height: 15vh;
+    padding: 0 2em; 
+    position: top;
+    width: 100%;
+    font-size: 1em;
+    box-shadow: 0 4px 8px var(--shadow_light);
+    background-color: white;
+    position: fixed;
+    z-index:10;
+}
+
+.navbar img {
+    height: 60%; 
+}
+
+.navbar-members {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 1; 
+    padding: 0;
+}
+
+.navbar-item {
+    padding: 0 1em;
+}
+
+.navbar-item a, .navbar-option {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em 2em;
+    display: inline-block;
+    position: relative;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+
+}
+/*Hover extraido de chat gpt para hacer la linea de color al pasar por arriba*/
+.navbar-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0; 
+    bottom: 0; 
+    background-color: var(--acent_color);
+    transition: width 0.3s ease;
+}
+
+.navbar-item a:hover::after {
+    width: 100%; 
+}
+#buy-now {
+    background-color: var(--acent_color);
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    border-radius: 0.5em;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+}
+#buy-now:hover {
+    background-color:#f6a700; 
+    transform: scale(1.01); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}

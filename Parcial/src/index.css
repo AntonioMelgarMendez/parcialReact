@@ -1,0 +1,27 @@
+/*Reiniciamos los valores predeterminados*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+
+  
+}
+/*Definimos variables de la paleta de colores*/
+:root{
+  --acent_color: #ffcc00;
+  --shadow_light:rgba(0, 0, 0, 0.1);
+  --shadow_dark:var(shadow_dark);
+  --gray_text:var(gray_text);
+
+}
+h2{
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #000000;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 0.1em solid var(--acent_color);
+  margin: 1em;
+
+}

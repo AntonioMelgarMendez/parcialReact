@@ -1,0 +1,41 @@
+.carousel {
+    position: relative;
+    overflow: hidden; /* Oculta el contenido que desborda */
+    width: 100%;
+  }
+  
+  .carousel-wrapper {
+    display: flex; /* Organiza las diapositivas en una fila */
+    transition: transform 0.5s ease; /* Suaviza la transición */
+  }
+  
+  .carousel-slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho */
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto */
+  }
+  
+  .carousel-slide img {
+    width: 100%; /* Hace que la imagen se ajuste al tamaño del slide */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para los botones */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Asegura que los botones estén por encima del contenido */
+  }
+  
+  .carousel-button.prev {
+    left: 10px; /* Ubicación del botón anterior */
+  }
+  
+  .carousel-button.next {
+    right: 10px; /* Ubicación del botón siguiente */
+  }
+  
